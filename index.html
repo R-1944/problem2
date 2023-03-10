@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container main">
+        <div class="row">
+            <u><h2>Registration form </h2></u>
+            <fieldset>
+                <form id="form" action=" " method="get">
+                    Name :  <input id="fnm" type="text" name="fnm" placeholder="Enter  Name" ><br><br>
+
+                    E-mail : <input type="text" placeholder="Enter Email" name="email" id="email" ><br>
+
+                    Phone no.:<input id="phone" type="tel" id="phone" name="phone"><br><br>
+
+                    Birthdate :<input id="bod" type="date" id="phone" name="phone"><br><br>
+
+                    Appoinment time :<input id="time" type="time" name="aptime" ><br><br>
+                    Favoritecolor:
+                        <!-- <button class="btn btn-outline-secondary dropdown-toggle" type="button">Dropdown</button>
+                        <div class="selectColor"> -->
+                            <select id="favcolor">
+                                <option value="test">Dropdown</option>
+                                <option>Pink</option>
+                                <option>Yellow</option>
+                                <option>Teal</option>
+                                <option>Green</option>
+                                <option>Red</option>
+                                </select><br><br>
+                            
+                    
+                    
+                    Payment method :<br>  card <input id="payment" type="radio" name="credit">
+                    cash <input id="payment" type="radio" name="credit">
+                    cheque <input id="payment" type="radio" name="credit"><br><br>
+
+                    Age :  <input id="age " type="range" name="age" ><br><br>
+
+                    Checkbox :<br>
+                    option_1: <input id="ckbox" type="checkbox" name="ckbox"><br>
+                    option_2: <input id="ckbox" type="checkbox" name="ckbox"><br>
+                    option_3: <input id="ckbox" type="checkbox" name="ckbox"><br>
+                    option_4: <input id="ckbox" type="checkbox" name="ckbox"><br>
+                    option_5: <input id="ckbox" type="checkbox" name="ckbox"><br><br>
+                    Upload photo <input id="ckbox" type="file" name="up_photo" > <br><br>
+                    
+                    
+                </form>
+                <button id="submit" onclick="submitForm()">submit</button>
+            </fieldset>
+        </div>
+    </div>  
+    <div class="container">
+        <div class="row">
+            <fieldset>
+                <legend><h2>DATA FROM LOCAL STORAGE</h2>
+                </legend>
+                <table id="sec2" border="2">
+                    <tr>
+                        <td><b>First Name</b></td>
+                        <td><b>Last Name</b></td>
+                        <td> <b>E-mail</b></td>
+                        <td><b>Phone Number</b></td>
+                        <td><b>Birthdate</b></td>
+                        <td><b>Appinment time</b></td>
+                        <td><b>Favorite color</b></td>
+                        <td><b>Payment method</b></td>
+                        <td><b>Checkbox</b></td>
+                        <td><b>Upload photo</b></td>
+                    </tr>
+                </table>
+                
+            </fieldset>
+        </div>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
